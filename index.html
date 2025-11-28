@@ -46,7 +46,14 @@
             font-size: 1.3em;
             opacity: 0.95;
         }
-        
+
+        .hero-image {
+            max-width: 100%;
+            margin-top: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
         .content {
             padding: 40px;
         }
@@ -94,7 +101,42 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
-        
+
+        .screenshots {
+            margin: 50px 0;
+        }
+
+        .screenshot {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .screenshot img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .screenshot h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .screenshot p {
+            color: #666;
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+
+        .more-text {
+            text-align: center;
+            font-size: 1.5em;
+            color: #667eea;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
         footer {
             background: #f8f9fa;
             padding: 30px 40px;
@@ -133,6 +175,7 @@
         <header>
             <h1>KubeDesk</h1>
             <p>Modern Kubernetes Cluster Management for macOS</p>
+            <img src="img/Dashboard.png" alt="KubeDesk Dashboard" class="hero-image">
         </header>
         
         <div class="content">
@@ -171,8 +214,25 @@
                     <p>View, edit, and manage all your Kubernetes resources.</p>
                 </div>
             </div>
-            
+
+            <div class="screenshots">
+                <div class="screenshot">
+                    <h3>Pod Management</h3>
+                    <img src="img/Pods.png" alt="KubeDesk Pods View">
+                    <p>View and manage all your pods with detailed information.</p>
+                </div>
+
+                <div class="screenshot">
+                    <h3>Command Palette</h3>
+                    <img src="img/Command-Pallet.png" alt="KubeDesk Command Palette">
+                    <p>Quick access to any resource with Cmd+K.</p>
+                </div>
+
+                <p class="more-text">...and much more</p>
+            </div>
+
             <div class="links">
+                <a href="support.html">Support</a>
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="copyright.html">Copyright & Legal</a>
             </div>
@@ -181,6 +241,7 @@
         <footer>
             <p>&copy; 2024 KubeDesk. All rights reserved.</p>
             <p>
+                <a href="support.html">Support</a> |
                 <a href="privacy.html">Privacy Policy</a> |
                 <a href="copyright.html">Copyright</a>
             </p>
