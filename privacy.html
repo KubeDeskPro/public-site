@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - KubeDesk</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 60px;
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .last-updated {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        h3 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            margin: 30px 0;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+        
+        .back-link:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> November 28, 2024</p>
+        
+        <div class="highlight">
+            <p><strong>TL;DR:</strong> KubeDesk does not collect, store, or transmit any of your personal data. Everything stays on your device. We take your privacy seriously.</p>
+        </div>
+        
+        <h2>1. Overview</h2>
+        <p>
+            KubeDesk ("the App") is a native macOS application for managing Kubernetes clusters. This privacy policy explains how the App handles your data and protects your privacy.
+        </p>
+        
+        <h2>2. Data Collection</h2>
+        <h3>We Do NOT Collect Any Data</h3>
+        <p>KubeDesk does not collect, store, transmit, or share any of your personal information or usage data. Specifically:</p>
+        <ul>
+            <li><strong>No Analytics:</strong> We do not use any analytics services or tracking tools.</li>
+            <li><strong>No Crash Reports:</strong> We do not collect crash reports or diagnostic data.</li>
+            <li><strong>No User Accounts:</strong> The App does not require you to create an account or provide any personal information.</li>
+            <li><strong>No Network Tracking:</strong> We do not track which Kubernetes clusters you connect to or what resources you manage.</li>
+            <li><strong>No Telemetry:</strong> We do not send any telemetry or usage statistics to our servers.</li>
+        </ul>
+        
+        <h2>3. Data Storage</h2>
+        <h3>Local Storage Only</h3>
+        <p>All data used by KubeDesk is stored locally on your device:</p>
+        <ul>
+            <li><strong>Kubeconfig Files:</strong> The App reads your kubeconfig files (typically located at <code>~/.kube/config</code>) to connect to your Kubernetes clusters. These files never leave your device.</li>
+            <li><strong>Cloud Credentials:</strong> If you use cloud providers (AWS, GCP, Azure), the App reads credentials from standard locations (e.g., <code>~/.config/gcloud/</code>). These credentials are never transmitted to us.</li>
+            <li><strong>App Preferences:</strong> User preferences and settings are stored locally using macOS UserDefaults.</li>
+            <li><strong>Resource Cache:</strong> Kubernetes resource data is cached locally for performance. This cache is stored in your app's sandbox container.</li>
+        </ul>
+        
+        <h2>4. Network Connections</h2>
+        <h3>Direct Connections to Your Clusters</h3>
+        <p>KubeDesk connects directly to your Kubernetes clusters:</p>
+        <ul>
+            <li>The App makes HTTPS connections to the Kubernetes API servers you configure.</li>
+            <li>All communication is directly between your device and your clusters.</li>
+            <li>We do not act as a proxy or intermediary for these connections.</li>
+            <li>Your cluster credentials and data are never sent to our servers (we don't have any servers).</li>
+        </ul>
+
+        <h3>Helper Tool</h3>
+        <p>KubeDesk uses an optional helper tool (kubedesk-helper) for advanced features:</p>
+        <ul>
+            <li>The helper is installed via Homebrew and runs locally on your device (localhost:47823).</li>
+            <li>It executes kubectl commands and manages authentication for cloud providers.</li>
+            <li>All communication between the App and the helper stays on your device.</li>
+            <li>The helper does not send any data to external servers.</li>
+        </ul>
+
+        <h2>5. Third-Party Services</h2>
+        <h3>App Store and StoreKit</h3>
+        <p>KubeDesk uses Apple's StoreKit framework for subscription management:</p>
+        <ul>
+            <li>Apple processes subscription payments according to their privacy policy.</li>
+            <li>We do not receive or store your payment information.</li>
+            <li>We only receive a subscription status (active/inactive) from Apple.</li>
+        </ul>
+
+        <h3>No Other Third-Party Services</h3>
+        <p>The App does not integrate with any other third-party services, SDKs, or analytics platforms.</p>
+
+        <h2>6. Permissions</h2>
+        <h3>Why We Need Certain Permissions</h3>
+        <p>KubeDesk requests the following macOS permissions:</p>
+        <ul>
+            <li><strong>Network Access:</strong> To connect to your Kubernetes cluster API servers.</li>
+            <li><strong>File Access:</strong> To read kubeconfig files and cloud credentials from standard locations (<code>~/.kube/config</code>, <code>~/.config/gcloud/</code>).</li>
+        </ul>
+        <p>These permissions are used solely for the App's core functionality and not for data collection.</p>
+
+        <h2>7. Data Security</h2>
+        <p>KubeDesk is built with security in mind:</p>
+        <ul>
+            <li><strong>App Sandbox:</strong> The App runs in Apple's App Sandbox, which restricts access to system resources.</li>
+            <li><strong>Minimal Permissions:</strong> We request only the minimum permissions necessary for functionality.</li>
+            <li><strong>No Data Transmission:</strong> Since we don't collect data, there's no risk of data breaches or unauthorized access to our servers.</li>
+            <li><strong>Local Encryption:</strong> Sensitive data (like security-scoped bookmarks) is stored using macOS's secure storage mechanisms.</li>
+        </ul>
+
+        <h2>8. Children's Privacy</h2>
+        <p>
+            KubeDesk is not directed at children under the age of 13. We do not knowingly collect personal information from children. Since we don't collect any data at all, this is not a concern.
+        </p>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>
+            We may update this privacy policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.
+        </p>
+
+        <h2>10. Contact Us</h2>
+        <p>
+            If you have any questions about this privacy policy or KubeDesk's privacy practices, please contact us at:
+        </p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:admin@kubedesk.app">admin@kubedesk.app</a>
+        </p>
+
+        <div class="highlight">
+            <p><strong>Summary:</strong> Your privacy is paramount. KubeDesk is designed to work entirely on your device without collecting or transmitting any of your data. What happens on your Mac, stays on your Mac.</p>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
+
