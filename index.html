@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KubeDesk - Kubernetes Cluster Management for macOS</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="KubeDesk is a native macOS application for managing Kubernetes clusters. Connect to AWS EKS, GCP GKE, Azure AKS, and local clusters with an intuitive interface.">
+    <meta name="keywords" content="Kubernetes, macOS, K8s, cluster management, AWS EKS, GCP GKE, Azure AKS, DevOps, container orchestration, kubectl, Mac App Store">
+    <meta name="author" content="KubeDesk">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kubedesk.app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kubedesk.app/">
+    <meta property="og:title" content="KubeDesk - Kubernetes Cluster Management for macOS">
+    <meta property="og:description" content="A native macOS application for managing Kubernetes clusters with an intuitive interface. Works with AWS EKS, GCP GKE, Azure AKS, and local clusters.">
+    <meta property="og:image" content="https://kubedesk.app/img/Dashboard.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://kubedesk.app/">
+    <meta name="twitter:title" content="KubeDesk - Kubernetes Cluster Management for macOS">
+    <meta name="twitter:description" content="A native macOS application for managing Kubernetes clusters with an intuitive interface. Works with AWS EKS, GCP GKE, Azure AKS, and local clusters.">
+    <meta name="twitter:image" content="https://kubedesk.app/img/Dashboard.png">
+
+    <!-- App Store Smart Banner -->
+    <meta name="apple-itunes-app" content="app-id=6754831864">
+
     <style>
         * {
             margin: 0;
@@ -52,6 +77,19 @@
             margin-top: 30px;
             border-radius: 12px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .app-store-badge {
+            margin-top: 25px;
+        }
+
+        .app-store-badge img {
+            height: 50px;
+            transition: transform 0.3s;
+        }
+
+        .app-store-badge img:hover {
+            transform: scale(1.05);
         }
 
         .content {
@@ -176,6 +214,11 @@
             <h1>KubeDesk</h1>
             <p>Modern Kubernetes Cluster Management for macOS</p>
             <img src="img/Dashboard.png" alt="KubeDesk Dashboard" class="hero-image">
+            <div class="app-store-badge">
+                <a href="https://apps.apple.com/ca/app/kubedesk-pro/id6754831864?mt=12" target="_blank" rel="noopener">
+                    <img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83" alt="Download on the Mac App Store">
+                </a>
+            </div>
         </header>
         
         <div class="content">
