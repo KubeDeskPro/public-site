@@ -1,6 +1,6 @@
-# KubeDesk App Store Pages
+# KubeDesk Pro App Store Pages
 
-This directory contains the GitHub Pages site for KubeDesk's privacy policy and copyright information, required for App Store submission.
+This directory contains the GitHub Pages site for KubeDesk Pro's privacy policy and copyright information, required for App Store submission.
 
 ## 📁 Files
 
@@ -64,8 +64,8 @@ The pages currently use placeholder emails:
 
 ### Update Company/Developer Name
 
-If you want to use a different company name instead of "KubeDesk", update:
-- Copyright notices: `© 2024 KubeDesk`
+If you want to use a different company name instead of "KubeDesk Pro", update:
+- Copyright notices: `© 2024 KubeDesk Pro`
 - Company references throughout the pages
 
 ### Update Helper Repository Link
