@@ -178,7 +178,7 @@
         .app-store-btn {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 15px;
             padding: 14px 28px;
             border-radius: 12px;
             text-decoration: none;
@@ -199,6 +199,11 @@
         .app-store-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+        }
+
+        .app-store-btn .apple-icon {
+            font-size: 2em;
+            line-height: 1;
         }
 
         .app-store-btn .label {
@@ -567,18 +572,24 @@
 
             <div class="app-store-buttons">
                 <a href="https://apps.apple.com/ca/app/kubedesk-basic/id6756553008?mt=12" class="app-store-btn basic" target="_blank" rel="noopener">
+                    <span class="apple-icon"></span>
                     <div>
-                        <span class="label">Download Free</span>
-                        <span class="name">KubeDesk Basic</span>
+                        <span class="label">Download on the</span>
+                        <span class="name">Mac App Store</span>
                     </div>
                 </a>
                 <a href="https://apps.apple.com/ca/app/kubedesk-pro/id6754831864?mt=12" class="app-store-btn pro" target="_blank" rel="noopener">
+                    <span class="apple-icon"></span>
                     <div>
-                        <span class="label">Get Full Power</span>
-                        <span class="name">KubeDesk Pro</span>
+                        <span class="label">Download on the</span>
+                        <span class="name">Mac App Store</span>
                     </div>
                 </a>
             </div>
+
+            <p style="color: var(--gray-500); margin-top: 15px; font-size: 0.9em;">
+                <strong style="color: var(--white);">Basic</strong> is free forever &nbsp;•&nbsp; <strong style="color: var(--white);">Pro</strong> unlocks advanced features
+            </p>
 
             <!-- Image Carousel -->
             <div class="carousel-container">
@@ -738,15 +749,17 @@
         <p>Download KubeDesk today and experience the difference.</p>
         <div class="app-store-buttons">
             <a href="https://apps.apple.com/ca/app/kubedesk-basic/id6756553008?mt=12" class="app-store-btn basic" target="_blank" rel="noopener">
+                <span class="apple-icon"></span>
                 <div>
-                    <span class="label">Start Free</span>
-                    <span class="name">KubeDesk Basic</span>
+                    <span class="label">Free on the</span>
+                    <span class="name">Mac App Store</span>
                 </div>
             </a>
             <a href="https://apps.apple.com/ca/app/kubedesk-pro/id6754831864?mt=12" class="app-store-btn pro" target="_blank" rel="noopener" style="background: white; color: var(--dark);">
+                <span class="apple-icon"></span>
                 <div>
-                    <span class="label">Go Pro</span>
-                    <span class="name">KubeDesk Pro</span>
+                    <span class="label">Pro on the</span>
+                    <span class="name">Mac App Store</span>
                 </div>
             </a>
         </div>
